@@ -3,7 +3,7 @@
 import (
 	"log"
 	"math"
-)  
+)
 type caluclation interface {
 	area() float64
 	perimeter() float64
@@ -51,9 +51,17 @@ func(c circle) perimeter() float64 {
 
 package main
 
-import "log"
+import (
+	"github.com/habib0071/golang_practice/go13-package/helpers"
+	"log"
+)
 
 func main() {
 	log.Println("Hello")
-	
+
+	var myVar helpers.SomeType
+	myVar.TypeName = "Some name"
+	myVar.TypeNumber = 12
+	log.Println(myVar)
+
 }
